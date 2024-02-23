@@ -92,31 +92,72 @@
     </section>
     <!-- fin del hero -->
     <!-- Incio cinta de empresas -->
-    <div
-      class="flex justify-around w-full m-auto px-32 mt-14 gap-10 shadow-md py-4 overflow-hidden"
+    <section
+      class="relative min-h-[60px] flex flex-col justify-center bg-slate-900 overflow-hidden"
     >
-      <img
-        class="h-9"
-        src="/img/Airtable (logo — Black).png"
-        alt="logo airtable"
-      />
-      <img
-        class="h-9"
-        src="/img/Big Fish Games (logo — Black).png"
-        alt="logo big fish"
-      />
-      <img class="h-9" src="/img/Catch (logo — Black).png" alt="catch`" />
-      <img
-        class="h-9"
-        src="/img/Deloitte (logo — Black).png"
-        alt="logo deloitte"
-      />
-      <img
-        class="h-9"
-        src="/img/Dribbble (logo — Black).png"
-        alt="logo dribbble"
-      />
-    </div>
+      <div class="w-full max-w-5xl mx-auto md:px-6">
+        <div class="text-center">
+          <!-- Logo Carousel animation -->
+          <div
+            x-data="{}"
+            x-init="$nextTick(() => {
+                        let ul = $refs.logos;
+                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                        ul.nextSibling.setAttribute('aria-hidden', 'true');
+                    })"
+            class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+          >
+            <ul
+              x-ref="logos"
+              class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            >
+              <li>
+                <img src="./img/Airtable (logo — Black).png" alt="Facebook" />
+              </li>
+              <li>
+                <img
+                  src="./img/Big Fish Games (logo — Black).png"
+                  alt="Disney"
+                />
+              </li>
+              <li>
+                <img src="./img/Catch (logo — Black).png" alt="Airbnb" />
+              </li>
+              <li>
+                <img src="./img/Deloitte (logo — Black).png" alt="Apple" />
+              </li>
+              <li>
+                <img src="./img/Dribbble (logo — Black).png" alt="Spark" />
+              </li>
+            </ul>
+            <ul
+              x-ref="logos"
+              class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            >
+              <li>
+                <img src="./img/Airtable (logo — Black).png" alt="Facebook" />
+              </li>
+              <li>
+                <img
+                  src="./img/Big Fish Games (logo — Black).png"
+                  alt="Disney"
+                />
+              </li>
+              <li>
+                <img src="./img/Catch (logo — Black).png" alt="Airbnb" />
+              </li>
+              <li>
+                <img src="./img/Deloitte (logo — Black).png" alt="Apple" />
+              </li>
+              <li>
+                <img src="./img/Dribbble (logo — Black).png" alt="Spark" />
+              </li>
+            </ul>
+          </div>
+          <!-- End: Logo Carousel animation -->
+        </div>
+      </div>
+    </section>
     <!-- Fin cinta de empresas -->
     <!-- Inicio article -->
     <main>
