@@ -11,9 +11,9 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="">
+  <body class="text-parrafo">
     <header
-      class="bg-secondary w-full m-auto px-10 sm:px-32 h-18 py-3 rounded-b-lg gap-4 animate-slide-in-top shadow-md flex justify-between"
+      class="bg-secondary w-full m-auto px-10 sm:px-32 h-18 py-3 rounded-b-lg gap-4 animate-slide-in-top shadow-md flex justify-between sticky top-0 z-10"
     >
       <div class="flex w-full m-auto items-center justify-between">
         <div class="">
@@ -59,7 +59,7 @@
     </header>
     <div
       id="sideBar"
-      class="bg-secondary w-1/2 h-svh z-10 right-0 top-0 absolute rounded-l-lg hidden ease-linear delay-150 transition-all p-4"
+      class="bg-secondary w-1/2 h-full z-10 right-0 top-0 absolute rounded-l-lg hidden ease-linear delay-150 transition-all p-4"
     >
       <i id="toggleBtn" class="bi bi-x-circle text-primary text-3xl"></i>
     </div>
@@ -93,15 +93,109 @@
     <!-- fin del hero -->
     <!-- Incio cinta de empresas -->
     <div
-      class="flex justify-around w-full m-auto px-32 mt-16 gap-10 shadow-md py-4 overflow-hidden"
+      class="flex justify-around w-full m-auto px-32 mt-14 gap-10 shadow-md py-4 overflow-hidden"
     >
-      <img class="h-9" src="/img/Airtable (logo — Black).png" alt="" />
-      <img class="h-9" src="/img/Big Fish Games (logo — Black).png" alt="" />
-      <img class="h-9" src="/img/Catch (logo — Black).png" alt="" />
-      <img class="h-9" src="/img/Deloitte (logo — Black).png" alt="" />
-      <img class="h-9" src="/img/Dribbble (logo — Black).png" alt="" />
+      <img
+        class="h-9"
+        src="/img/Airtable (logo — Black).png"
+        alt="logo airtable"
+      />
+      <img
+        class="h-9"
+        src="/img/Big Fish Games (logo — Black).png"
+        alt="logo big fish"
+      />
+      <img class="h-9" src="/img/Catch (logo — Black).png" alt="catch`" />
+      <img
+        class="h-9"
+        src="/img/Deloitte (logo — Black).png"
+        alt="logo deloitte"
+      />
+      <img
+        class="h-9"
+        src="/img/Dribbble (logo — Black).png"
+        alt="logo dribbble"
+      />
     </div>
     <!-- Fin cinta de empresas -->
+    <!-- Inicio article -->
+    <main>
+      <article
+        class="sm:flex justify-between m-auto px-10 items-center align-middle mt-14 lg:mt-0 lg:mx-40 xl:mx-20"
+      >
+        <div class="sm:w-2/5">
+          <h2 class="text-secondary text-3xl font-semibold text-balance mb-4">
+            Potencia tu Presencia Online
+          </h2>
+          <p class="text-parrafo text-lg font-normal">
+            Aumenta tu visibilidad en internet con estrategias de marketing
+            digital que destacan tu marca en el mundo digital.
+          </p>
+        </div>
+        <div>
+          <img src="./img/Chica-redes.png" alt="imagen promocional" />
+        </div>
+      </article>
+      <!-- Fin article -->
+    </main>
+
+    <!-- Inicio del footer -->
+    <footer class="bg-secondary">
+      <div class="py-8 px-10 sm:px-32 sm:flex Sm: justify-between">
+        <ul class="gap-2">
+          <li>Inicio</li>
+          <li>Nosotros</li>
+          <li>Contacto</li>
+        </ul>
+
+        <div class="">
+          <h3>Contactanos</h3>
+          <div>
+            <input
+              class="px-4 py-1 text-xl rounded-md font-normal"
+              placeholder="escribe tu email"
+              type="email"
+              name="email"
+              id=""
+            />
+            <button
+              class="bg-button px-4 py-1 hover:bg-none border-button border-2 rounded-md font-normal text-xl shadow-md hover:animate-tilt"
+              type="button"
+            >
+              Contactanos!
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-border border-t-2 border-opacity-20 sm:flex sm:justify-between pt-4 px-10 sm:px-32 py-3"
+      >
+        <img
+          class="w-24 h-full md:w-24"
+          src="/img/VIRALUTION_BLANCO_VECTOR.png"
+          alt="logo"
+        />
+        <h3>
+          Copyright © 2022-2024 Viralution, C.A. Todos los derechos reservados.
+        </h3>
+        <ul class="flex gap-5 text-primary">
+          <li>
+            <a href=""><i class="bi bi-whatsapp text-primary text-xl"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-instagram text-primary text-xl"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-twitter-x text-primary text-xl"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="bi bi-facebook text-primary text-xl"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Fin del footer -->
 
     <script type="module" src="/main.js"></script>
   </body>
